@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #f5f5f5;
+    text-align: center;
+}
+
+/* Header y navegación */
+header {
+    background: #333;
+    color: #f1c40f;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+
+}
+
+nav a.active {
+    font-weight: bold;
+    text-decoration: overline;
+}
+
+/* Títulos */
+h1 {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #f1c40f;
+}
+
+/* Barra de búsqueda y filtro */
+.busqueda-filtro {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.busqueda-filtro input,
+.busqueda-filtro select,
+.busqueda-filtro button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.busqueda-filtro button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.busqueda-filtro button:hover {
+    background-color: #0056b3;
+}
+
+/* Contenedor de artículos */
+  .products {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        gap: 2em;
+        padding: 2em 1em;
+        flex-wrap: wrap;
+    }
+
+    .product {
+        background-color: #2e2e2e;
+        border: 1px solid #444;
+        border-radius: 8px;
+        width: 300px;
+        padding: 1.5em;
+        text-align: center;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .product img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .product h2 {
+        margin: 0.5em 0;
+        font-size: 1.5em;
+        color: #f1c40f;
+    }
+
+    .product p {
+        font-size: 1.1em;
+        margin-bottom: 1.5em;
+        color: #e0e0e0;
+    }
+
+.wha img  {
+        width: 45px; 
+        height: 45px;
+        margin-top: 5px;
+    }
+
+    .wha a{
+        display: inline-block;
+        border-radius: 50%;
+        transition: transform 0.3s;
+    }
+
+    .wha a:hover {
+        transform: scale(1.1); 
+    }
+
+
+
+
+/* Mostrar artículos según el filtro */
+.articulo.economico {
+    display: block; /* Mostrar los artículos económicos */
+}
+
+.articulo.medio {
+    display: block; /* Mostrar los artículos medianos */
+}
+
+.articulo.caro {
+    display: block; /* Mostrar los artículos caros */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; /* Alinea el logo verticalmente */
+}
+
+.logo {
+    height: 100px;
+    width: auto; 
+}
+   nav {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos del nav en los extremos */
+    align-items: center; /* Centra verticalmente el contenido */
+    padding: 0.1rem 2rem;
+
+}
+      nav ul {
+            font-size: 20px;
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+           background-color: #575757;
+        }
+

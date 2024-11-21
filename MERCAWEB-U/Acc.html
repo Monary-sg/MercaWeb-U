@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accsesorios</title>
+    <link rel="stylesheet" href="StyleAc.css">
+</head>
+<body>
+    <header>
+           <nav>
+             <div class="logo-container">
+            <img src="img/logo.png" alt="Logo" class="logo">
+        </div>
+        <ul>
+            <li><a href="html.html">Inicio</a></li>
+            <li><a href="aliment.html">Alimentos</a></li>
+            <li><a href="Acc.html">Accesorios</a></li>
+            <li><a href="Var.html">Variedades</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+    </header>
+
+        <h1>Accsesorios en Venta</h1>
+        <!-- Barra de búsqueda y filtros -->
+        <section class="busqueda-filtro">
+            <form>
+                <input type="text" id="busqueda" placeholder="Buscar artículos..." oninput="filtrarArticulos()">
+                <select id="filtro" onchange="filtrarArticulos()">
+                    <option value="">Todos</option>
+                    <option value="economico">Menos de $30</option>
+                    <option value="medio">Entre $30 y $50</option>
+                    <option value="caro">Más de $50</option>
+                </select>
+            </form>
+        </section>
+        <!-- Contenedor de artículos -->
+        <section class="products">
+            <article class="product" data-precio="50">     
+                <img src="img/acc1.jpg" alt="Artículo 1">
+                <h2>Collares con dijes</h2>
+                <p>collares con diferentes diseños</p>
+                <p>horario de venta:</p>
+                <p></p>
+                <p>Lunes: 9:00am - 2:00pmS</p>
+                <span class="precio">$50.00</span>
+                <p></p>
+                <div class="wha">
+                <a href="https://wa.me/6681579029"  target="_blank">
+                <img src="img/whatsapp-icon.png" alt="Contactar por WhatsApp">  
+            </a>
+            </div>
+           </article>
+
+           <article class="product" data-precio="40">
+                <img src="img/acc2.jpg" alt="Artículo 2">
+                <h2>Collares Personalizados</h2>
+                <p>Collares hechos a mano con la forma que mas gustes,enviame tu diseño y te lo hare con gusto!</p>
+                <span class="precio">$40.00</span>
+                 <p></p>
+                <div class="wha">
+                <a href="https://wa.me/6681579029"  target="_blank">
+                <img src="img/whatsapp-icon.png" alt="Contactar por WhatsApp">  
+            </a>
+            </div>
+            </article>
+            <article class="product" data-precio="60">
+                <img src="img/acc3.jpg" alt="Artículo 3">
+                <h2>Llavero</h2>
+                <p>Llavero de studio Ghibli del castigo vagabundo</p>
+                <span class="precio">$70.00</span>
+                 <p></p>
+                <div class="wha">
+                <a href="https://wa.me/6681579029"  target="_blank">
+                <img src="img/whatsapp-icon.png" alt="Contactar por WhatsApp">  
+            </a>
+            </div>
+           </article>  
+        </section>
+    <script src="script.js"></script> 
+</body>
+</html>

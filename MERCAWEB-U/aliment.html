@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alimentos</title>
+    <link rel="stylesheet" href="StyleA.css">
+</head>
+<body>
+    <header>
+           <nav>
+             <div class="logo-container">
+            <img src="img/logo.png" alt="Logo" class="logo">
+        </div>
+        <ul>
+            <li><a href="html.html">Inicio</a></li>
+            <li><a href="aliment.html">Alimentos</a></li>
+            <li><a href="Acc.html">Accesorios</a></li>
+            <li><a href="Var.html">Variedades</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+    </header>
+
+        <h1>Alimentos en Venta</h1>
+        <!-- Barra de búsqueda y filtros -->
+        <section class="busqueda-filtro">
+            <form>
+                <input type="text" id="busqueda" placeholder="Buscar artículos..." oninput="filtrarArticulos()">
+                <select id="filtro" onchange="filtrarArticulos()">
+                    <option value="">Todos</option>
+                    <option value="economico">Menos de $30</option>
+                    <option value="medio">Entre $30 y $50</option>
+                    <option value="caro">Más de $50</option>
+                </select>
+            </form>
+        </section>
+        <!-- Contenedor de artículos -->
+        <section class="products">
+            <article class="product" data-precio="25">     
+                <img src="img/producto3.jpg" alt="Artículo 1">
+                <h2>Galletas delicooki</h2>
+                <p>Galletas del Costco con chispas de chocolate.</p>
+                <p>horario de venta:</p>
+                <p></p>
+                <p>Lunes: 9:00am - 2:00pmS</p>
+                <span class="precio">$15.00</span>
+                <p></p>
+                <div class="wha">
+                <a href="https://wa.me/6681579029"  target="_blank">
+                <img src="img/whatsapp-icon.png" alt="Contactar por WhatsApp">  
+            </a>
+            </div>
+           </article>
+
+           <article class="product" data-precio="40">
+                <img src="img/Producto2.jpg" alt="Artículo 2">
+             <h2>Burritos</h2>
+            <p>Burritos disponibles!!
+                Paquete de 4 a $50 pesos
+                3 de machaca y uno de frijol o
+                3 de chorizo y uno de frijol</p>               
+                 <span class="precio">$50.00</span>
+                 <p></p>
+                <div class="wha">
+                <a href="https://wa.me/6681579029"  target="_blank">
+                <img src="img/whatsapp-icon.png" alt="Contactar por WhatsApp">  
+            </a>
+            </div>
+            </article>
+            <article class="product" data-precio="60">
+                <img src="img/Producto1.jpg" alt="Artículo 3">
+                <h2>Pay de queso</h2>
+            <p>En venta ricos pays de queso 😋 a solo $30, puedo pasar a sus salones, quien guste encargar‼</p>
+          
+                <span class="precio">$30.00</span>
+                 <p></p>
+                <div class="wha">
+                      <h3>7:00am - 1:30pm</h3>
+                <a href="https://wa.me/6681579029"  target="_blank">
+                <img src="img/whatsapp-icon.png" alt="Contactar por WhatsApp">  
+            </a>
+            <h3>2:00pm - 7:00pm</h3>
+              <a href="https://wa.me/6681579041" class="whatsapp-button" target="_blank">
+                <img src="img/whatsapp-icon.png" alt="Contactar por WhatsApp" class="whatsapp-icon">
+            </a>
+            </div>
+           </article>  
+        </section>
+    <script src="script.js"></script> 
+</body>
+</html>
